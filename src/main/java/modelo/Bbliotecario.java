@@ -1,15 +1,17 @@
+package modelo;
+
 import java.util.Vector;
 
-public class Bbliotecario {
+class Bibliotecario {
 	private String _nombre;
 	private String _rut;
 	private String _direccion;
 	private String _id;
-	private Biblioteca _unnamed_Biblioteca_;
-	private Vector<Prestamo> _prestamos = new Vector<Prestamo>();
+	private Biblioteca _biblioteca;  // Cambié el nombre de la variable
+	private Vector<Prestamo> _prestamos = new Vector<>();
 
-	public Bbliotecario() {
-		throw new UnsupportedOperationException();
+	public Bibliotecario() {
+		// Puedes inicializar variables u realizar acciones en el constructor si es necesario
 	}
 
 	public String getId() {
@@ -43,4 +45,14 @@ public class Bbliotecario {
 	public void setNombre(String nombre) {
 		this._nombre = nombre;
 	}
+
+	public Biblioteca getBiblioteca() {
+		return _biblioteca;
+	}
+
+	public void setBiblioteca(Biblioteca biblioteca) {
+		this._biblioteca = biblioteca;
+	}
+
+	// Puedes agregar más métodos según las necesidades de tu aplicación
 }

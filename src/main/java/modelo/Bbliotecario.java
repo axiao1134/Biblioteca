@@ -1,7 +1,7 @@
 package modelo;
 
 import java.util.Vector;
-
+//ejemplo
 class Bibliotecario {
 	private String _nombre;
 	private String _rut;
